@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode_list">
+        <item>Children\'s</item>
+        <item>Adult</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="mode_list_for_setting">
+        <item>Children\'s</item>
+        <item>Adult</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="quesses_list">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+
+</resources>
