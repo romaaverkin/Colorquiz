@@ -1,16 +1,31 @@
+// MainActivity.java
+// Управляет фрагментом MainActivityFragment на телефоне и фрагментами
+// MainActivityFragment и SettingsActivityFragment на планшете
 package com.romaaverkingmail.colorquiz;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
+    // Ключи для чтения данных из SharedPreferences
+    public static final String CHOICES = "pref_numberOfChoices";
+    public static final String REGIONS = "pref_regionsToInclude";
 
+    private boolean phoneDevice = true; // Включение портретного режима
+    private boolean preferencesChanged = true; // Настройки изменились?
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
