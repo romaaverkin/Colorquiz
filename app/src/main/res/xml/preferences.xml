@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/quesses_list"
+        android:entryValues="@array/quesses_list"
+        android:key="pref_numberOfChoices"
+        android:title="@string/number_of_choices"
+        android:summary="@string/number_of_choices_description"
+        android:persistent="true"
+        android:defaultValue="4" />
+
+    <MultiSelectListPreference
+        android:entries="@array/mode_list_for_setting"
+        android:entryValues="@array/mode_list"
+        android:key="pref_regionsToInclude"
+        android:title="@string/all_colors"
+        android:summary="@string/all_colors_description"
+        android:persistent="true"
+        android:defaultValue="@array/mode_list" />
+</PreferenceScreen>
