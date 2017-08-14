@@ -14,4 +14,5 @@
     <string name="reset_quiz">Reset Quiz</string>
     <string name="color_description">Picture of the current color in the quiz</string>
     <string name="default_mode">Children\'s</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>
